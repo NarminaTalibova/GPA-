@@ -29,7 +29,7 @@ class Program
         {
             Console.WriteLine("E");
         }
-        else if (GPA <=51)
+        else if (GPA <=50)
         {
          Console.WriteLine("F (Kesildi)");
         }
