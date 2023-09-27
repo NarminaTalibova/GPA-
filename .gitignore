@@ -1,32 +1,39 @@
-# Prerequisites
-*.d
+using System;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+class Program
+{
+    static void Main()
+    {
+        Console.Write("GPA daxil edin: ");
+        int GPA = Convert.ToInt32(Console.ReadLine());
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+        if (GPA >= 91 && GPA <= 100)
+        {
+            Console.WriteLine("A");
+        }
+        else if (GPA >= 81 && GPA <= 90)
+        {
+            Console.WriteLine("B");
+        }
+        else if (GPA >= 71 && GPA <= 80)
+        {
+            Console.WriteLine("C");
+        }
+        else if (GPA >= 61 && GPA <= 70)
+        {
+            Console.WriteLine("D");
+        }
+        else if (GPA >= 51 && GPA <= 60)
+        {
+            Console.WriteLine("E");
+        }
+        else if ( GPA >= 0 && GPA <= 50)
+        {
+            Console.WriteLine("Kəsildi");
+        }
+        else
+        {
+            Console.WriteLine("GPA düzgün daxil edilməyib!");
+        }
+    }
+}
