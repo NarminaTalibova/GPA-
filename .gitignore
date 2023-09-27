@@ -7,33 +7,36 @@ class Program
         Console.Write("GPA daxil edin: ");
         int GPA = Convert.ToInt32(Console.ReadLine());
 
-        if (GPA >= 91 && GPA <= 100)
+        if (GPA >= 0 && GPA <= 100)
+       {
+         if (GPA >= 91)
         {
             Console.WriteLine("A");
         }
-        else if (GPA >= 81 && GPA <= 90)
+        else if (GPA >= 81)
         {
             Console.WriteLine("B");
         }
-        else if (GPA >= 71 && GPA <= 80)
+        else if (GPA >= 71)
         {
             Console.WriteLine("C");
         }
-        else if (GPA >= 61 && GPA <= 70)
+        else if (GPA >= 61)
         {
             Console.WriteLine("D");
         }
-        else if (GPA >= 51 && GPA <= 60)
+        else if ( GPA >=51)
         {
             Console.WriteLine("E");
         }
-        else if ( GPA >= 0 && GPA <= 50)
+        else if (GPA <=51)
         {
-            Console.WriteLine("Kəsildi");
+         Console.WriteLine("F (Kesildi)");
         }
         else
         {
             Console.WriteLine("GPA düzgün daxil edilməyib!");
         }
     }
+}
 }
