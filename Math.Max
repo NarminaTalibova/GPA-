@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("X dəyərini daxil edin: ");
+        int X = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Y dəyərini daxil edin: ");
+        int Y = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Z dəyərini daxil edin: ");
+        int Z = Convert.ToInt32(Console.ReadLine());
+
+        int enBoyuk = Math.Max(X, Math.Max(Y, Z));
+
+        Console.WriteLine("Ən böyük ədəd: " + enBoyuk);
+    }
+}
